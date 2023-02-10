@@ -248,3 +248,12 @@ const Nose = ElUltimo.values();
 for (const value of Nose) {
     console.log(value);
   }
+
+  //Challenge
+/*
+const Numbers = [1,2,3,4,5,6,7,8,9,10]
+
+const ParImpar = (Element) => Element % 2 == 0   
+
+function parss { 
+  if (Element % 2 == 0 (console.log("Par"))) }*/
