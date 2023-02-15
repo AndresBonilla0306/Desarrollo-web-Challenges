@@ -4,6 +4,7 @@ import App from './App'
 import FirstApp from './FirstApp'
 import Categories from './Categories'
 import Input from './Input'
+import GiftExperteApp from './GiftExperteApp'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -12,5 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <FirstApp value={2} />
     <Categories />
     <Input />
+    <GiftExperteApp />
   </React.StrictMode>,
 )
