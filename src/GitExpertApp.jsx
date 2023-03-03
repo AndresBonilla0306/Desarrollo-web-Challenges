@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {AddCategory} from "./components/AddCategory"
 import {GifGrid} from './components/GifGrid'
+//import { useCounter } from './hooks/useCounter'
 const categories = ['empanada', 'hamborguesa']
 
  
