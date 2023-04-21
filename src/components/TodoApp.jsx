@@ -1,7 +1,7 @@
 import React from 'react'
 import { useReducer } from 'react'
-import TodoList from './TodoList'
-import TodoAdd from './TodoAdd'
+import { TodoAdd } from './TodoAdd'
+import { TodoList } from './TodoList'
 import { TodoReducer } from './TodoReducer'
 
 const initialState = [ {
@@ -28,7 +28,7 @@ export const TodoApp =() => {
 
         <div className='row'>
             <div className='col-7'>
-                <TodoList todos={ todos} />
+                <TodoList todos={ todos } />
             </div>
             <div className='col-5'>
                 <TodoAdd onNewTodo={handleNewTodo}/>

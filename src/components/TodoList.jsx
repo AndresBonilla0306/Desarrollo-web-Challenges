@@ -1,16 +1,16 @@
 import React from 'react'
+import { TodoItem } from './TodoItem'
 
-const TodoList = () => {
+export const TodoList = ({ todos = []}) => {
   return (
-    <>
-      <ul className='list-group'>
-        <li className='list-group-item'>
-          <span className='span'> Item 1</span>
-          <button className='btnBorrar'>Borrar</button>
-        </li>
-      </ul>
-    </>
+    <ul className='list-group'>
+      {
+          todos.map((todo, key) => {
+            return (
+              <TodoItem key={key} todo={todo} />
+            )
+          })
+      }
+    </ul>
   )
 }
-
-export default TodoList
