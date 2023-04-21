@@ -5,11 +5,12 @@ import App from './App'
 //import { GifGrid } from './components/GifGrid'
 //import GitExpertApp from './GitExpertApp'
 import { MultipleCustomHooks } from './components/MultipleCustomHooks'
+import { TodoApp } from './components/TodoApp'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <App />
-    <MultipleCustomHooks/>
+    <TodoApp/>
   </>,
 )
