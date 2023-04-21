@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useReducer } from 'react'
 import { TodoAdd } from './TodoAdd'
 import { TodoList } from './TodoList'
 import { TodoReducer } from './TodoReducer'
+import * as types from './types';
 
 const initialState = [ {
     id: new Date().getTime(),
@@ -10,12 +11,19 @@ const initialState = [ {
     done: false
 }]
 
+const init = () => {
+    return JSON.parse(localStorage.getItem( 'todos' )) || []
+}
 export const TodoApp =() => {
-    const [todos, dispatchTodo] = useReducer(TodoReducer , initialState);
+    const [todos, dispatchTodo] = useReducer(TodoReducer , initialState, init);
+
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos))
+    }, [todos])
 
      const handleNewTodo = ( todo ) => {
         const action ={
-            type: '[TODO] ADD TODO', 
+            type: types.CREATE_TODO, 
             payload: todo 
         }
         dispatchTodo(action)

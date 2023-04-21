@@ -29,7 +29,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #1CF02E;
 }
 
 h1 {
@@ -61,16 +60,29 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.Nav{
+  background-color: #FFF166;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 15%;
+}.Links{
+  color: #D90368;
+  text-decoration: underline;
+  font-size: 2vw;
+  transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}.Links:hover{
+  font-size: 2.2vw;
+  color: #8f0646;
+}.Links:focus{
+  font-size: 1.8vw;
+  color: aqua;
+}
+.Nav img {
+  width: 80%;
+  padding: 10%;
+}.Egg img{
+  width: 50%;
+  height: auto;
 }
