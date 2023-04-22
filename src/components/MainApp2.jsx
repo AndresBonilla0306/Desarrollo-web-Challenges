@@ -15,8 +15,12 @@ export const MainApp2 = () => {
         <span> Counter is: {counter}</span><br/>
         <button
           className='btn btn-primary'
+          onClick={ () => dispatch( increment() )}
+        > Actualizar</button><br/>
+        <button
+          className='btn btn-primary'
           onClick={ () => dispatch (decrement())}
-          > eliminar imagen</button>
+          > Eliminar</button>
     </>
   )
 }
