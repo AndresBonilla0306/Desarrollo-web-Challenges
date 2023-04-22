@@ -18,7 +18,7 @@ export const TodoAdd = ({ onNewTodo}) => {
             type='text'
             placeholder='Tarea'
             className='form-control'
-        />
+        /><br/>
         <button
             type='submit'
             placeholder='Tarea'
