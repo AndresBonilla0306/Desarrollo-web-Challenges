@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavComponent } from './NavComponent'
+import { Homepage } from './Homepage'
 
 export const MainApp2 = () => {
   return (
