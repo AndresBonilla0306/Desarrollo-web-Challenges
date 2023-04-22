@@ -12,15 +12,11 @@ export const MainApp2 = () => {
     <>
         <h1>MainApp</h1>
         <hr/>
-        <span> Counter is: {counter}</span>
-        <button
-          className='btn btn-primary'
-          onClick={ () => dispatch( increment() )}
-        > +1 </button>
+        <span> Counter is: {counter}</span><br/>
         <button
           className='btn btn-primary'
           onClick={ () => dispatch (decrement())}
-          > -1</button>
+          > eliminar imagen</button>
     </>
   )
 }
